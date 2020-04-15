@@ -1,0 +1,42 @@
+<!-- [ModuleAction:{controlKey: "AboutMe", securityAccessLevel : "Edit",  titleKey: "AboutMe", localResourceFile: "~/DesktopModules/AngularNGMD/App_LocalResources/index.hmtl.resx" }] -->
+[AntiForgeryToken:true]
+
+<!-- Production -->
+<!-- 
+[JavaScript:{ path: "~/DesktopModules/aj_angularUppdragsAdmin/dist/runtime.js", priority:100, provider: "DnnFormBottomProvider"}]
+[JavaScript:{ path: "~/DesktopModules/aj_angularUppdragsAdmin/dist/polyfills.js", priority:100, provider: "DnnFormBottomProvider"}]
+[JavaScript:{ path: "~/DesktopModules/aj_angularUppdragsAdmin/dist/main.js", priority:100, provider: "DnnFormBottomProvider"}]
+[Css:{ path: "~/DesktopModules/aj_angularUppdragsAdmin/dist/styles.css"}]
+-->
+<!-- End: Production -->
+
+<!-- Development -->
+[JavaScript:{ path: "~/DesktopModules/aj_angularUppdragsAdmin/dist/runtime.js", priority:100, provider: "DnnFormBottomProvider"}]
+[JavaScript:{ path: "~/DesktopModules/aj_angularUppdragsAdmin/dist/polyfills.js", priority:100, provider: "DnnFormBottomProvider"}]
+[JavaScript:{ path: "~/DesktopModules/aj_angularUppdragsAdmin/dist/styles.js", priority:100, provider: "DnnFormBottomProvider"}]
+[JavaScript:{ path: "~/DesktopModules/aj_angularUppdragsAdmin/dist/vendor.js", priority:100, provider: "DnnFormBottomProvider"}]
+[JavaScript:{ path: "~/DesktopModules/aj_angularUppdragsAdmin/dist/main.js", priority:100, provider: "DnnFormBottomProvider"}]
+<!-- End: Development -->
+
+<!-- if you use material design -->
+[Css:{ path: "https://fonts.googleapis.com/icon?family=Material+Icons"}]
+
+<!--
+Other information
+[DNNtc.ModuleDependencies(DNNtc.ModuleDependency.CoreVersion, "07.00.00")]
+[DNNtc.PackageProperties("AngularNG", 1, "Angular5 module", "An Angular sample module", "BBAngular.png", "Torsten Weggen", "bitboxx solutions", "http://www.bitboxx.net", "info@bitboxx.net", false)]
+[DNNtc.ModuleProperties("AngularNG", "Angular5 module", 0)]
+[DNNtc.ModuleControlProperties("", "AngularNG", DNNtc.ControlType.View, "", false, false)]
+[ModuleContext:ModuleId]
+Token Example:
+[ModuleContext:ModuleId]
+[Portal:Currency][Tab:TabName]
+-->
+
+<base href="[ModuleProperties:rawurl]">
+<app-root>
+    <p>Loading....</p>
+</app-root>
+<script>
+    window["aj_angularUppdragsAdmin"] = [ModuleProperties:All]
+</script>
